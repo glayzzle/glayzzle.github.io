@@ -278,6 +278,12 @@ body{
 	color:#333;
 	background: #eee;
 }
+
+.gray {
+	color:#111;
+	background: #ccc;
+}
+
 .blue {
 	background: #065892;
 	color: #ffffff;
