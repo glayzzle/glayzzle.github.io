@@ -10,14 +10,14 @@
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 	<title>Glayzzle - The union between PHP and NodeJS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
+	<meta name="description" content="Run PHP with nodejs">
 	<meta name="author" content="Ioan CHIRIAC">
 
 	<!--stylesheets-->
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" >
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" >
-	<link rel="stylesheet" href="/css/flexslider.css">
-	<link rel="stylesheet" href="/css/fractionslider.css">
+	<link rel="stylesheet" type="text/css" href="/css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="/css/fractionslider.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="/css/ie.css" />
@@ -69,9 +69,6 @@
 						<div class="nav-collapse">
 							<ul class="nav">
 								<li class="current"><a href="#features">Features</a></li>
-								<!-- li><a href="#launch">Get Started!</a></li>
-								<li><a href="#features">Community</a></li>
-								<li><a href="#services">Services</a></li -->
 								<li><a href="#support">Contact</a></li>
 							</ul>
 						</div>
@@ -167,161 +164,26 @@
 						</div>
 					</div>
 					<div class="span6 supportright">
-						<!--div class="supporttitle">
-							we also do support through socials
-						</div>
-						<div class="supportsocialblock">
-							<a href="#" class="social1 linkedin"></a>
-							<a href="#" class="social1 fb"></a>
-							<a href="#" class="social1 tw"></a>
-							<a href="#" class="social1 flickr"></a>
-							<a href="#" class="social1 pinterest"></a>
-							<a href="#" class="social1 skype"></a>
-						</div>
-						<div class="supporttitle">
-							want a cup of coffee?
-						</div>
-						<p>76 Ninth Ave</p>
-						<p>New York, NY 10011, United States</p>
-						<p>Phone +1 212-565-0000</p>
-						<p>Cloud9.com</p-->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!--div class="gmap">
-		<iframe width="425" height="350" src="https://maps.google.co.in/maps?q=amsterdam&amp;ie=UTF8&amp;hl=en&amp;hq=&amp;hnear=Amsterdam,+Government+of+Amsterdam,+North+Holland,+The+Netherlands&amp;ll=52.370216,4.895168&amp;spn=0.059428,0.169086&amp;t=m&amp;z=13&amp;output=embed"></iframe>
-	</div -->
-
 	<div class="footer">
 		<div class="container footertext">
 			<div class="paddingcnt">
-				&copy; 2014 <span class="orange">Ioan Chiriac</span> - All rights reserved
+				&copy; 2016 <span class="orange">Ioan Chiriac</span> - All rights reserved
 			</div>
 		</div>
 	</div>
-
-
-<!--js-->
-<script src="js/jquery-1.9.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="js/jquery.fractionslider.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-jQuery(function($){
-	$("#submit").click(function(){
-		var cname = $("#name").val() ;
-		var cemail = $("#email").val();
-		var cmesg = $("#message").val();
-		var errcount=0;
-		if(cname.length < 1)
-		{
-			$("#name").addClass("error");
-			errcount = 1;
-		}	else
-			$("#name").removeClass("error");
-		//email validation
-		var emailRegex = new RegExp(/^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/i);
-		var valid = emailRegex.test(cemail);
-		if (!valid) {
-			$("#email").addClass("error");
-			errcount = 1;
-		}else
-			$("#email").removeClass("error");
-		if(cmesg.length < 1)
-		{
-			$("#message").addClass("error");
-			errcount = 1;
-		}	else
-			$("#message").removeClass("error");
-		if(errcount ==0 )
-		{
-			$.ajax({
-				type: "POST",
-				url: "form.php",
-			data: 'message='+cmesg+'&name='+cname+'&email='+cemail,
-			dataType: "html",
-			success: function(msg){
-				  $('#name').val('');
-				  $('#email').val('');
-				  $('#message').val('');
-				  $('#subject').val('');
-				  $('#contact_form_new').append("<p class='sentsucc'>We will contact you shortly.</p>");
-				  setTimeout(function(){
-					if ($('.sentsucc').length > 0) {
-						$('.sentsucc').remove();
-					}
-				  }, 5000)
-			  }
-		  });
-			return false;
-		}
-		else
-		{
-			return false;
-		}
-	});
-
-	$('.nav').onePageNav({scrollOffset: 128});
-	$(window).resize(function(){
-		var top = $('#home').offset().top;
-		var cmsimg = $('.cmsimg').offset().top;
-		var cmstitle = $('.cmstitle').offset().top;
-		var featureabs = $('.featureabs').offset().top;
-		var featuretitle1 = $('.featuretitle1').offset().top;
-		$(window).scroll(function () {
-			var y = $(this).scrollTop();
-			if((y >= cmstitle)){
-				$('.cmsimg').addClass('cmsimgr');
-			}
-			if(y >= featuretitle1){
-				$('.featureabs').addClass('featureabsl');
-			}
-		});
-		if($(this).width()<980)
-		{
-			$("nav li a").click(function(){
-				$(".nav-collapse").css("height","0px");
-				$(".nav-collapse").removeClass("in");
-			});
-		}
-		var sliderpadding=$('.headerblock').height();
-		$('.homeslider').css('paddingTop',sliderpadding);
-
-		var featheight=$('.featureabs img').height();
-		var featuresetblocktext=$('.featuresetblocktext').height();
-
-		if(featuresetblocktext > featheight)
-		$('.featureblock1').css('height','auto');
-		else
-		$('.featureblock1').css('height',featheight);
-
-		var cmsimgheight=$('.cmsimg img').height();
-		var cmsleftheight=$('.cmsleft').height();
-
-		if(cmsleftheight > cmsimgheight)
-			$('.cms').css('height','auto');
-		else
-		{
-		$('.cms').css('height',cmsimgheight);
-		}
-		var imgheight=$('.frame').height();
-		var imgwidth=$('.frame').width();
-		var imgheight1=imgheight/2;
-		var imgwidth1=(imgwidth)/4;
-		$('.flexslider .slides li').css('height',imgheight);
-		$('.clientmain').css('width',imgwidth1);
-		$('.clientmain').css('height',imgheight1);
-	});
-	$(window).resize();
-});
-/* ]]> */
-</script>
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.fractionslider.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
