@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -18,8 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-HTML5 display-role reset for older browsers 
-article, aside, details, figcaption, figure, 
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -48,7 +48,7 @@ font-family: HelveticaNeueLTProRoman;
 src: url('../fonts/HelveticaNeueLTPro-Roman.eot'),
      url('../fonts/HelveticaNeueLTPro-Roman.otf'),
      url('../fonts/HelveticaNeueLTPro-Roman.woff'),
-     url('../fonts/helveticaneueltpro-roman-webfont.eot');	 	 	 
+     url('../fonts/helveticaneueltpro-roman-webfont.eot');
 }
 
 @font-face
@@ -91,53 +91,53 @@ a,a:focus{
 a {
 	color:#2d2d2d;
 	text-decoration: none;
-   	-webkit-transition:all 0.2s ease-in;  
-   -moz-transition:all 0.2s ease-in;  
-   -o-transition:all 0.2s ease-in;  
-   transition:all 0.2s ease-in;  	
+   	-webkit-transition:all 0.2s ease-in;
+   -moz-transition:all 0.2s ease-in;
+   -o-transition:all 0.2s ease-in;
+   transition:all 0.2s ease-in;
 }
 
 a:hover{
 	text-decoration: none;
 	color:#cf5631;
-	-webkit-transition:all 0.2s ease-in;  
-   -moz-transition:all 0.2s ease-in;  
-   -o-transition:all 0.2s ease-in;  
-   transition:all 0.2s ease-in;  
+	-webkit-transition:all 0.2s ease-in;
+   -moz-transition:all 0.2s ease-in;
+   -o-transition:all 0.2s ease-in;
+   transition:all 0.2s ease-in;
 }
 
 /* fonts (change the fonts here if you have bought Neue Hass Grotesk webfont) */
 
 body{
-	font-family: 'Open Sans', sans-serif;    /* change this line to font-family: 'NeueHaasGroteskDisplayW02XtraLt', sans-serif; */ 
+	font-family: 'Open Sans', sans-serif;    /* change this line to font-family: 'NeueHaasGroteskDisplayW02XtraLt', sans-serif; */
 	font-size:14px;
 	color:#fff;
 	line-height:21px;
 	text-rendering: optimizeLegibility;
-	overflow-x:hidden;	
+	overflow-x:hidden;
 	/*letter-spacing:1px;*/		/* uncomment the code on this line */
 }
 
 .toptext{
-	font-family: 'Open Sans', sans-serif;    
+	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	color:#2d2d2d;
 	line-height:17px;
 	display:inline-block;
 	padding-right:25px;
-	letter-spacing:0;		
+	letter-spacing:0;
 }
 
 .clogin{
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Open Sans', sans-serif;
 	color:#cf5631;
 	font-size:14px;
 	line-height:17px;
-	letter-spacing:0;	
+	letter-spacing:0;
 }
 
 .teamtitle{
-	font-family: 'Open Sans', sans-serif;     /* change this line to 	font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif; */ 
+	font-family: 'Open Sans', sans-serif;     /* change this line to 	font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif; */
 	font-size:24px;
 	line-height:27px;
 	color:#52697a;
@@ -147,32 +147,32 @@ body{
 
 .price{
 	color:#252525;
-	font-family: 'Montserrat', sans-serif;     /* change this line to font-family: 'NeueHaasGroteskTextW02Medium', sans-serif;   */ 
+	font-family: 'Montserrat', sans-serif;     /* change this line to font-family: 'NeueHaasGroteskTextW02Medium', sans-serif;   */
 	font-size:72px;
-	line-height:75px;	
+	line-height:75px;
 }
 
 .price1{
 	padding-top:5px;
-	font-family: 'Open Sans', sans-serif;     /* change this line to 	font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif; */ 
+	font-family: 'Open Sans', sans-serif;     /* change this line to 	font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif; */
 	font-size:14px;
 	line-height:17px;
-	color:#329ac6;	
+	color:#329ac6;
 }
 
 .pricingtitle{
 	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;      /* change this line to font-family: 'NeueHaasGroteskTextW02Medium', sans-serif;  */  
+	font-family: 'Montserrat', sans-serif;      /* change this line to font-family: 'NeueHaasGroteskTextW02Medium', sans-serif;  */
 	font-size:36px;
 	line-height:39px;
 	color:#252525;
 	padding:30px 0 25px 0;
-	border-bottom:1px solid #d7d7d7;	
+	border-bottom:1px solid #d7d7d7;
 }
 
 .pricingsubtitle{
 	text-transform:uppercase;
-	font-family: 'Open Sans', sans-serif;	     /* change this line to font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif; */ 
+	font-family: 'Open Sans', sans-serif;	     /* change this line to font-family: 'NeueHaasGroteskDisplayW02Lt', sans-serif; */
 	font-size:18px;
 	line-height:21px;
 	color:#6d6d6d;
@@ -180,31 +180,31 @@ body{
 }
 
 .order{
-	font-family: 'Montserrat', sans-serif;      /* change this line to font-family: 'NeueHaasGroteskTextW02Medium', sans-serif;  */  
+	font-family: 'Montserrat', sans-serif;      /* change this line to font-family: 'NeueHaasGroteskTextW02Medium', sans-serif;  */
 	font-size:16px;
 	line-height:19px;
 	border: solid 1px #1b7ba3;
 	color:#fff;
 	padding:10px 55px;
 	text-transform:uppercase;
-	background:#329ac6;	
+	background:#329ac6;
 	background-image: -webkit-linear-gradient(top, #4fb7e3, #329ac6);
 	background-image: -moz-linear-gradient(top, #4fb7e3, #329ac6);
 	background-image: -o-linear-gradient(top, #4fb7e3, #329ac6);
 	background-image: -ms-linear-gradient(top, #4fb7e3, #329ac6);
 	background-image: linear-gradient(to bottom, #4fb7e3, #329ac6);
 	margin:10px 0 30px;
-	display:inline-block;	
+	display:inline-block;
 }
 
 .footertext{
 	text-align:center;
 	padding:40px 0;
 	color:#454545;
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Open Sans', sans-serif;
 	font-size:17px;
 	line-height:20px;
-	letter-spacing:0;			
+	letter-spacing:0;
 }
 
 /* fonts  */
@@ -252,10 +252,10 @@ body{
 	z-index: 999999;
 	top: 0;
 	padding:20px 0;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in;  	
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 }
 
 .logo{
@@ -263,7 +263,7 @@ body{
 	vertical-align:top;
 	z-index: 2;
 	position: absolute;
-	float:left;	
+	float:left;
 }
 
 /* end header section */
@@ -275,7 +275,8 @@ body{
 }
 
 .white {
-	color:#fff;
+	color:#333;
+	background: #eee;
 }
 .blue {
 	background: #065892;
@@ -288,10 +289,18 @@ body{
 	background-color: rgba(6,30,60,0.9)
 }
 
+.text p {
+	margin-bottom: 10px;
+}
+
+.text a {
+	text-decoration: underline;
+}
+
 /* slider section */
 
 .padTop {
-	padding-top: 160px;
+	padding-top: 106px;
 }
 
 .fraction-slider .prev, .fraction-slider .next {
@@ -328,7 +337,7 @@ body{
 	font-family: 'NeueHaasGroteskDisplayW02XtraLt', sans-serif;
 	font-size:60px;
 	line-height:63px;
-	text-transform:uppercase;	
+	text-transform:uppercase;
 }
 
 .sliderheading sup{
@@ -340,17 +349,17 @@ body{
 	font-size:36px;
 	text-transform:uppercase;
 	border:2px solid #fff;
-	padding:1% 2.3%;	
+	padding:1% 2.3%;
 }
 
 .slidelink:hover{
 	color:#fff;
 	text-decoration:none;
 }
-	
+
 .slider-wrapper{
 	position:relative;
-	overflow:hidden;	
+	overflow:hidden;
 	background:url('http://www.placehold.it/1600x722');   /* set the background image of the slider here */
 	background-size:cover;
 }
@@ -372,12 +381,12 @@ body{
 
 .servicesblock{
 	background:#2d2d2d;
-	border-bottom:2px solid #041e34;	
+	border-bottom:2px solid #041e34;
 }
 
 .titleblock{
 	padding:70px 0;
-}	
+}
 
 .titleblock h1 {
 	text-transform:uppercase;
@@ -402,7 +411,7 @@ sup{
 	position: relative;
 	top: -15px;
 	font-size: 40px;
-	color:#cf5631;	
+	color:#cf5631;
 }
 
 
@@ -420,7 +429,7 @@ sup{
 	display:inline-block;
 	vertical-align: top;
 	margin-top: 32px;
-	margin-right:-4px;	
+	margin-right:-4px;
 }
 
 #support .dashed-line,#pricing .dashed-line,#payment .dashed-line{
@@ -437,18 +446,18 @@ sup{
 }
 
 .serviceicon{
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
    transition:all 0.5s ease-in;
 	margin:0 auto;
 }
 
 .serviceblk1:hover .serviceicon{
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in; 
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 }
 
 .serviceicon1{
@@ -507,36 +516,36 @@ h2 {
 	right:-100%;
 	bottom:0;
 	float:right;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in;	
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 }
 
 .cmsimgr{
 	right:0;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in;	
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 }
 
 .cmsleft{
 	position:relative;
 	left:0;
-	-webkit-transition:all 1s ease-in;  
-   -moz-transition:all 1s ease-in;  
-   -o-transition:all 1s ease-in;  
-   transition:all 1s ease-in;		
+	-webkit-transition:all 1s ease-in;
+   -moz-transition:all 1s ease-in;
+   -o-transition:all 1s ease-in;
+   transition:all 1s ease-in;
 }
 
 .cmsleftl{
 	position:relative;
 	left:0;
-	-webkit-transition:all 1s ease-in;  
-   -moz-transition:all 1s ease-in;  
-   -o-transition:all 1s ease-in;  
-   transition:all 1s ease-in;	
+	-webkit-transition:all 1s ease-in;
+   -moz-transition:all 1s ease-in;
+   -o-transition:all 1s ease-in;
+   transition:all 1s ease-in;
 }
 
 /* end services section */
@@ -546,7 +555,7 @@ h2 {
 .aboutblock{
 	background:#29343d;
 	border-bottom:2px solid #041e34;
-	padding-bottom:80px;	
+	padding-bottom:80px;
 }
 
 .team{
@@ -556,10 +565,10 @@ h2 {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	margin-bottom:20px; 
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
+	margin-bottom:20px;
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
    transition:all 0.5s ease-in;
 	background-size:cover;
 	background: #1c252c;
@@ -570,7 +579,7 @@ h2 {
 	-moz-transition: box-shadow 400ms ease-in-out;
 	-o-transition: box-shadow 400ms ease-in-out;
 	-ms-transition: box-shadow 400ms ease-in-out;
-	transition: box-shadow 400ms ease-in-out;	
+	transition: box-shadow 400ms ease-in-out;
 }
 
 .teamsocialblock{
@@ -582,9 +591,9 @@ h2 {
 	height:35px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	border-radius: 50%;	
+	border-radius: 50%;
 	display:inline-block;
-	margin-right:8px;	
+	margin-right:8px;
 }
 
 .teamsocial:last-child{
@@ -616,24 +625,24 @@ h2 {
 }
 
 .teammem{
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in;  
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 	margin-bottom:20px;
 	text-align:center;
 }
 
 .teammem:hover .team{
 	opacity:1;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in; 
-    box-shadow: 
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
+    box-shadow:
         inset 0 0 0 0 rgba(0,0,0,0.6),
         inset 0 0 0 0px #1c252c,
-        0 0 10px rgba(0,0,0,0.3);   
+        0 0 10px rgba(0,0,0,0.3);
 }
 
 .team1{
@@ -648,12 +657,12 @@ h2 {
 
 .team3{
 	background:url('http://www.placehold.it/514x640') center no-repeat;    	/* set image of team member 3 here */
-	background-size: cover;	
+	background-size: cover;
 }
 
 .team4{
 	background:url('http://www.placehold.it/514x640') center no-repeat;    	/* set image of team member 4 here */
-	background-size: cover;	
+	background-size: cover;
 }
 
 .companyblock p{
@@ -685,7 +694,7 @@ h2 {
 
 .pricing{
 	background:#065892;
-	border-bottom:2px solid #041e34;	
+	border-bottom:2px solid #041e34;
 }
 
 .pricingtext{
@@ -700,18 +709,18 @@ h2 {
 	position:relative;
 	top:80px;
 	border-right:1px solid #000001;
-	-webkit-transition:top 0.5s ease-in;  
-   -moz-transition:top 0.5s ease-in;  
-   -o-transition:top 0.5s ease-in;  
-   transition:top 0.5s ease-in;  	
+	-webkit-transition:top 0.5s ease-in;
+   -moz-transition:top 0.5s ease-in;
+   -o-transition:top 0.5s ease-in;
+   transition:top 0.5s ease-in;
 }
 
 .pricingblock:hover{
 	top:0px;
-	-webkit-transition:top 0.5s ease-in;  
-   -moz-transition:top 0.5s ease-in;  
-   -o-transition:top 0.5s ease-in;  
-   transition:top 0.5s ease-in; 	
+	-webkit-transition:top 0.5s ease-in;
+   -moz-transition:top 0.5s ease-in;
+   -o-transition:top 0.5s ease-in;
+   transition:top 0.5s ease-in;
 }
 
 .open{
@@ -728,7 +737,7 @@ h2 {
 
 
 .orange{
-	color:#cf5631;	
+	color:#cf5631;
 }
 .pricinglist{
 	border-bottom:1px solid #d7d7d7;
@@ -754,12 +763,12 @@ h2 {
 
 .priceblock{
 	padding:25px 0;
-	background:#f0f3ff;	
+	background:#f0f3ff;
 	background-image: -webkit-linear-gradient(top, #f0f3ff, #e0e6ff);
 	background-image: -moz-linear-gradient(top, #f0f3ff, #e0e6ff);
 	background-image: -o-linear-gradient(top, #f0f3ff, #e0e6ff);
 	background-image: -ms-linear-gradient(top, #f0f3ff, #e0e6ff);
-	background-image: linear-gradient(to bottom, #f0f3ff, #e0e6ff);	
+	background-image: linear-gradient(to bottom, #f0f3ff, #e0e6ff);
 }
 
 /* end pricing section*/
@@ -770,12 +779,12 @@ h2 {
 	background:#05497a;
 	border-bottom:2px solid #041e34;
 	z-index:2;
-	position:relative;	
+	position:relative;
 }
 
 .pay{
 	text-align:center;
-	padding-bottom:70px;	
+	padding-bottom:70px;
 }
 
 .pay img{
@@ -798,42 +807,42 @@ h2 {
 .featureblock1{
 	background:#262932;
 	border-bottom:2px solid #041e34;
-	position:relative;	
+	position:relative;
 }
 
 .featureabs{
 	position:absolute;
 	bottom:0;
 	left:-100%;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in;	
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 }
 
 .featureabsl{
 	left:0;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in;	
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 }
 
 .featuresetblocktext{
 	z-index: 2;
 	position: relative;
 	right:0;
-	-webkit-transition:all 1s ease-in;  
-   -moz-transition:all 1s ease-in;  
-   -o-transition:all 1s ease-in;  
-   transition:all 1s ease-in;	
+	-webkit-transition:all 1s ease-in;
+   -moz-transition:all 1s ease-in;
+   -o-transition:all 1s ease-in;
+   transition:all 1s ease-in;
 }
 
 .featuresetblocktextr{
 	right:0;
-	-webkit-transition:all 1s ease-in;  
-   -moz-transition:all 1s ease-in;  
-   -o-transition:all 1s ease-in;  
+	-webkit-transition:all 1s ease-in;
+   -moz-transition:all 1s ease-in;
+   -o-transition:all 1s ease-in;
    transition:all 1s ease-in;
 	transition-delay:1s;
 }
@@ -873,7 +882,7 @@ h2 {
 
 .frameborder{
 	position:relative;
-}	
+}
 
 .frameborder img{
 	display:block;
@@ -885,7 +894,7 @@ h2 {
 	height: 92%;
 	top: 0;
 	margin: 47px 47px 0 47px;
-}	
+}
 
 .clientmain{
 	float:left;
@@ -901,18 +910,18 @@ h2 {
 	height:100%;
 	background:#000;
 	opacity:0.6;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
    transition:all 0.5s ease-in;
-   top:0;   
+   top:0;
 }
 
 .mask:hover{
 	opacity:0;
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
    transition:all 0.5s ease-in;
 }
 
@@ -962,7 +971,7 @@ h2 {
 	display:inline-block;
 	margin-top:20px;
 	margin-right:20px;
-	opacity:0.8;	
+	opacity:0.8;
 }
 
 .social1:hover{
@@ -970,10 +979,10 @@ h2 {
 	-moz-transform: rotate(-360deg);
 	-webkit-transform: rotate(-360deg);
 	transform: rotate(-360deg);
-	-webkit-transition:all 0.5s ease-in;  
-   -moz-transition:all 0.5s ease-in;  
-   -o-transition:all 0.5s ease-in;  
-   transition:all 0.5s ease-in; 	
+	-webkit-transition:all 0.5s ease-in;
+   -moz-transition:all 0.5s ease-in;
+   -o-transition:all 0.5s ease-in;
+   transition:all 0.5s ease-in;
 }
 
 .social1:last-child{
@@ -1024,7 +1033,7 @@ input, textarea {
 	text-indent:15px;
 	-webkit-box-shadow: 1px 1px 1px #000!important;
 	-moz-box-shadow: 1px 1px 1px #000!important;
-	box-shadow: 1px 1px 1px #000!important;	
+	box-shadow: 1px 1px 1px #000!important;
 }
 
 input{
@@ -1046,28 +1055,28 @@ textarea{
 	box-shadow: 0 1px 1px #323957, inset 0 1px rgba(255,255,255,.2);
 	border:0;
 	color:#fff;
-	-webkit-transition:top 0.5s ease-in;  
-   -moz-transition:top 0.5s ease-in;  
-   -o-transition:top 0.5s ease-in;  
-   transition:top 0.5s ease-in; 	
+	-webkit-transition:top 0.5s ease-in;
+   -moz-transition:top 0.5s ease-in;
+   -o-transition:top 0.5s ease-in;
+   transition:top 0.5s ease-in;
 }
 
 #submit:hover{
 	background:#017cf1;
-	-webkit-transition:top 0.5s ease-in;  
-   -moz-transition:top 0.5s ease-in;  
-   -o-transition:top 0.5s ease-in;  
-   transition:top 0.5s ease-in; 	
+	-webkit-transition:top 0.5s ease-in;
+   -moz-transition:top 0.5s ease-in;
+   -o-transition:top 0.5s ease-in;
+   transition:top 0.5s ease-in;
 }
 
 .contact-form .error{
 	border:2px solid #cf5631;
-}	
+}
 
 .sentsucc{
 	color:#fff;
 	padding-top: 20px;
-	font-size: 18px;	
+	font-size: 18px;
 }
 
 .gmap iframe{
@@ -1094,7 +1103,7 @@ textarea{
 	font-family: 'HelveticaNeueLTProRoman', sans-serif;
 	font-size:17px;
 	color:#454545;
-	line-height:20px;	
+	line-height:20px;
 }
 
 .navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover{
@@ -1145,7 +1154,7 @@ textarea{
 
 	.topbarr{
 		width:50%;
-	}	
+	}
 }
 
 @media (max-width: 1200px) {
@@ -1155,7 +1164,7 @@ textarea{
 @media (min-width: 980px) and (max-width: 1199px) {
 	.frame{
 		width: 92.1%;
-		height: 92%;		
+		height: 92%;
 		margin: 37px 37px 0 37px;
 	}
 
@@ -1166,18 +1175,18 @@ textarea{
 	.pricingtitle {
 		font-size: 30px;
 		line-height:33px;
-	}	
-	
-}	
-  
+	}
+
+}
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	.frame{
 		width: 92.1%;
-		height: 92%;		
+		height: 92%;
 		margin: 30px 29px 0 29px;
 	}
-	
+
 	.team{
 		width: 160px;
 		height: 160px;
@@ -1200,17 +1209,17 @@ textarea{
 	.price {
 		font-size: 56px;
 		line-height: 59px;
-	}	
+	}
 }
 
 @media (min-width: 623px) and (max-width: 767px) {
 	.frame{
 		width: 92.1%;
-		height: 92%;		
+		height: 92%;
 		margin: 25px 25px 0 25px;
 	}
 }
- 
+
 @media (max-width: 979px) {
 
 	.navbar {
@@ -1218,48 +1227,48 @@ textarea{
 		float: none;
 		text-align: center;
 		position: relative;
-		bottom: 4px;		
+		bottom: 4px;
 	}
-	
+
 	.navbar .nav {
 		margin: 20px 0 0 0;
 		text-align:left;
-	}	
-	
+	}
+
 	.navbar .nav>li {
 		padding-right: 0;
 	}
-		
+
 	.nav>li>a{
 		box-shadow: none;
 		text-shadow: 1px;
 		font-weight:normal!important;
-		color:#454545;	
-	}	
-	
+		color:#454545;
+	}
+
 	.nav .current a{
 		border-bottom:none!important;
-		color:#cf5631!important;		
+		color:#cf5631!important;
 	}
-	
+
 	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
 		padding: 10px 0 10px 10px;
 	}
-	
+
 	.navbar .nav > li {
 		background: none repeat scroll 0 0 #E1E1E1;
 	}
-	
+
 }
 
 @media (min-width: 481px) and (max-width: 622px) {
 	.frame{
 		width: 92.1%;
-		height: 92%;		
+		height: 92%;
 		margin: 20px 20px 0 20px;
 	}
 }
-   
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	body{
@@ -1274,31 +1283,31 @@ textarea{
 	.paddingcnt{
 		padding:0 20px;
 	}
-			
+
 	.supportright{
 		padding-top:70px;
 	}
-	
+
 	.featureblock1{
 		height:auto!important;
 	}
-	
+
 	.featureabs{
 		position:relative;
 	}
-	
+
 	.featuresetblock{
 		padding:70px 0;
 	}
-	
+
 	.pricingblock{
 		margin-bottom:70px;
 	}
-	
+
 	.mission{
 		padding-top:60px;
 	}
-	
+
 	.team{
 		width: 250px;
 		height: 250px;
@@ -1323,25 +1332,25 @@ textarea{
 
 	.title{
 		width: 100%;
-		float: none;	
+		float: none;
 	}
-		
+
 	.dashed-line{
 		display:none;
 	}
-	
+
 	.featureabs{
 		left:0;
 	}
-	
+
 	.cmsimg {
 		right: 0;
 	}
 
 	.cmsleft{
 		left:0;
-	}	
-	
+	}
+
 	.featuresetblocktext{
 		right:0;
 	}
@@ -1369,14 +1378,14 @@ textarea{
 		top: 45%;
 		background: url(../images/mediumarrows.png) -56px 0 no-repeat transparent;
 	}
-	
+
 	.fraction-slider .next:hover{
 		background: url(../images/mediumarrows.png) -55px -63px no-repeat transparent;
-	}		
+	}
 
 
 }
-     
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
@@ -1400,7 +1409,7 @@ textarea{
 		top: 45%;
 		background: url(../images/smallarrows.png) -29px -1px no-repeat transparent;
 	}
-	
+
 	.fraction-slider .next:hover{
 		background: url(../images/smallarrows.png) -33px -45px no-repeat transparent;
 	}
@@ -1414,7 +1423,7 @@ textarea{
 @media (min-width: 321px) and (max-width: 480px){
 	.frame{
 		width: 92.1%;
-		height: 92%;		
+		height: 92%;
 		margin: 14px 14px 0 14px;
 	}
 }
@@ -1423,7 +1432,7 @@ textarea{
 @media (max-width: 320px) {
 	.frame{
 		width: 92.1%;
-		height: 92%;		
+		height: 92%;
 		margin: 10px 10px 0 10px;
 	}
 }
