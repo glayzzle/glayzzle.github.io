@@ -158,12 +158,13 @@
 						</div>
 					</div>
 					<div class="span6 supportright">
-						<div class="gitter-chat-embed" data-room="glayzzle/Lobby"></div>
+						<div id="glayzzle-chat"></div>
 						<script>
 						  ((window.gitter = {}).chat = {}).options = {
 						    room: 'glayzzle/Lobby',
 								showChatByDefault: true,
-								useStyles: false
+								useStyles: false,
+								targetElement: document.getElementById('glayzzle-chat')
 						  };
 						</script>
 						<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
