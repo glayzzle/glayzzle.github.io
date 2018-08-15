@@ -1,189 +1,137 @@
 <!DOCTYPE html>
-<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-	<title>Glayzzle - The power of Javascript with the awesomeness of PHP</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Run PHP with nodejs">
-	<meta name="author" content="Ioan CHIRIAC">
+<html lang="en" dir="ltr">
 
-	<!--stylesheets-->
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" >
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" >
-	<link rel="stylesheet" type="text/css" href="/css/style.css?v=6">
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/ie.css" />
-	<![endif]-->
-	<!--<link rel="icon" type="image/x-icon" href="images/favicon.ico" />-->
-	<!-- html5.js -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-37515588-3', 'glayzzle.com');
-  ga('send', 'pageview');
-</script>
+<head>
+  <meta charset="utf-8">
+  <title>PHP Parser</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default.css">
+  <link rel="stylesheet" href="https://unpkg.com/vue-json-tree@0.3.3/dist/json-tree.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-	<div class="headerblock">
-		<a href="https://github.com/glayzzle/glayzzle">
-			<img style="position: absolute; top: 0; right: 0; border: 0;"
-			src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
-			alt="Fork me on GitHub"
-			data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
-		</a>
-		<div class="logoblock">
-			<div class="container">
-				<div class="paddingcnt">
-					<a href="index.html" class="logo"><img src="/images/logo.png" alt=""></a>
-					<nav class="navbar navbar-inverse">
-						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</a>
-						<div class="nav-collapse">
-							<ul class="nav">
-								<li class="current"><a href="#features">Features</a></li>
-								<li><a href="/php-parser/">Parser</a></li>
-								<li><a href="/php-transpiler/">Transpiler</a></li>
-								<li><a href="#support">Contact</a></li>
-								<li>
-									<iframe src="http://ghbtns.com/github-btn.html?user=glayzzle&repo=glayzzle&type=fork&count=true"
-										allowtransparency="true" frameborder="0" scrolling="0" width="84" height="22"></iframe>
-									<iframe src="http://ghbtns.com/github-btn.html?user=glayzzle&repo=glayzzle&type=watch&count=true"
-										allowtransparency="true" frameborder="0" scrolling="0" width="80" height="22"></iframe>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="padTop section blue">
-		<div class="container">
-			<div class="paddingcnt">
-				<div class="title">Work is still in progress</div>
-				<div class="text">
-					This project is in it's early developpement stages (an BETA version will be available soon).
-					I work on it in my spare time so <em>I need your support</em> to give a more professional
-					dimension to this project, so make a donation, join the community or just spread the word.
-					Please use the contact form bellow for Sponsoring Proposals.
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="features" class="section navy">
-		<div class="container">
-			<div class="paddingcnt">
-				<div class="titleblock">
-					<div class="dashed-line"></div>
-					<h1>Write PHP and run it with NodeJS !</h1>
-					<div class="dashed-line"></div>
-				</div>
-				<div class="row-fluid">
-					<div class="span4 serviceblk serviceblk1">
-						<div class="iconb">
-							<div class="serviceicon serviceicon1"></div>
-						</div>
-						<h2>Compatiblity</h2>
-						<div class="servicetext">
-							The project will be compatible with all PHP syntax, but
-							at start there will be some limitation, like the '&' byref.
-							I do not plan to support native PHP modules, but it will be a
-							way to register them to be backward compatible.
-						</div>
-					</div>
-					<div class="span4 serviceblk serviceblk2">
-						<div class="iconb">
-							<div class="serviceicon serviceicon2"></div>
-						</div>
-						<h2>PHP into your browser</h2>
-						<div class="servicetext">
-							Sounds like a joke ! Using the PHP in the browser is not realy the
-							point ... The fact is that with this library it open doors to PHP for GUI
-							development under Node-WebKit, Electron or Apache Cordova (hacks comming soon)
-						</div>
-					</div>
-					<div class="span4 serviceblk serviceblk3">
-						<div class="iconb">
-							<div class="serviceicon serviceicon3"></div>
-						</div>
-						<h2>Merging Communities</h2>
-						<div class="servicetext">
-							The main idea behind this project is to merge 2 great communities,
-							the PHP world comes with a great range of tools, frameworks, libraries
-							and programs, and on the other hand NodeJS is just the coolest
-							Web plateform !
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="supportblock section blue" id="support">
-		<div class="container">
-			<div class="paddingcnt">
-				<div class="titleblock">
-					<div class="dashed-line"></div>
-					<h1>Contact Form</h1>
-					<div class="dashed-line"></div>
-				</div>
-				<div class="row-fluid">
-					<div class="span6 supportleft">
-						<div class="supporttitle">
-							Want to help, have any questions ?
-						</div>
-						<p>
+  <div id="app">
+    <md-app md-waterfall md-mode="overlap" v-cloak>
+      <md-app-toolbar class="md-primary md-large md-dense">
+        <div class="md-toolbar-row">
+          <div class="md-toolbar-section-start">
+            <a href="https://github.com/glayzzle/php-parser">
+              <span class="md-title">
+                <img src="https://avatars3.githubusercontent.com/u/7166545?s=200&v=4" width="32" height="32" alt="Glayzzle" /> php-parser
+              </span>
+            </a>
+          </div>
 
-						</p>
-						<div class="contact-form">
-							<form action="https://formspree.io/i.chiriac@yahoo.com" id="contact_form_new" method="post">
-								<input name="name" id="name" type="text" placeholder="Name">
-								<input name="_replyto" id="email" type="email" placeholder="Email">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-								<input id="submit" type="submit" value="Send Message">
-							</form>
-						</div>
-					</div>
-					<div class="span6 supportright">
-						<div id="glayzzle-chat"></div>
-						<script>
-						  ((window.gitter = {}).chat = {}).options = {
-						    room: 'glayzzle/Lobby',
-								showChatByDefault: true,
-								useStyles: false,
-								targetElement: document.getElementById('glayzzle-chat')
-						  };
-						</script>
-						<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+          <div class="md-toolbar-section-center">
+            <md-switch v-model="parserOptions.parser.debug">
+              Debug
+              <md-tooltip md-delay="500">Show debug logs</md-tooltip>
+            </md-switch>
+            <md-switch v-model="parserOptions.parser.extractDoc">
+              Comments
+              <md-tooltip md-delay="500">Extract comments</md-tooltip>
+            </md-switch>
+            <md-switch v-model="parserOptions.parser.extractTokens">
+              Tokens
+              <md-tooltip md-delay="500">Extract code tokens</md-tooltip>
+            </md-switch>
+            <md-switch v-model="parserOptions.ast.withPositions">
+              Positions
+              <md-tooltip md-delay="500">AST positions</md-tooltip>
+            </md-switch>
+            <md-switch v-model="parserOptions.ast.withSource">
+              Source
+              <md-tooltip md-delay="500">Extract AST source</md-tooltip>
+            </md-switch>
+          </div>
 
-	<div class="footer">
-		<div class="container footertext">
-			<div class="paddingcnt">
-				&copy; 2017 <span class="orange">Ioan Chiriac</span> - All rights reserved
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js?v=1"></script>
+          <div class="md-toolbar-section-end">
+            <md-switch class="md-accent" v-model="live">
+              Live Mode
+              <md-tooltip>Parse while typing</md-tooltip>
+            </md-switch>
+            <md-button class="md-raised" @click="parseInput()">
+              <md-icon style="color: #333">play_arrow</md-icon> Parse
+              <md-tooltip>Parse code</md-tooltip>
+            </md-button>
+          </div>
+        </div>
+      </md-app-toolbar>
+
+      <md-app-content>
+        <div class="md-layout md-gutter">
+          <div class="md-layout-item input-container md-size-50" :class="{'md-invalid': output.errors.length}">
+            <md-field>
+              <md-textarea :value="codeInput" @input.native="event => codeInput = event.target.value"></md-textarea>
+            </md-field>
+            <json-tree class="errors-box" :data="{errors: output.errors}" :level="3"></json-tree>
+          </div>
+
+          <div class="md-layout-item output-container md-size-50">
+            <json-tree :data="output" :level="2"></json-tree>
+          </div>
+        </div>
+      </md-app-content>
+    </md-app>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vue-material@beta"></script>
+  <script src="https://unpkg.com/vue-json-tree@0.3.3/dist/json-tree.js"></script>
+  <script type="text/javascript" src="../dist/php-parser.min.js"></script>
+  <script type="text/javascript">
+    var parser = PhpParser;
+
+    Vue.use(VueMaterial.default);
+
+    new Vue({
+      el: "#app",
+      data: {
+        live: true,
+        parserOptions: {
+          parser: {
+            debug: false,
+            extractDoc: true,
+            suppressErrors: true,
+            extractTokens: true
+          },
+          ast: {
+            withPositions: true,
+            withSource: true
+          }
+        },
+        codeInput: '<?php \n\n// Echo statement\necho "hello php-parser";',
+        output: {
+          errors: []
+        }
+      },
+      watch: {
+        parserOptions: {
+          handler() {
+            this.parseInput();
+          },
+          deep: true
+        },
+        codeInput: {
+          immediate: true,
+          handler(newValue) {
+            if (!this.live) return;
+            this.parseInput(newValue);
+          }
+        }
+      },
+      methods: {
+        parseInput(value) {
+          this.output = parser.parseCode(
+            value || this.codeInput,
+            this.parserOptions
+          );
+        }
+      }
+    });
+  </script>
 </body>
+
 </html>
