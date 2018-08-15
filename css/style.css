@@ -33,3 +33,6 @@ textarea {
 .input-container.md-invalid .md-field:before {
   border-color: #ef5350 !important;
 }
+.md-toolbar.md-theme-default.md-primary .md-icon.md-theme-default {
+  color: #333;
+}

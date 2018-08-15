@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css">
   <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default.css">
   <link rel="stylesheet" href="https://unpkg.com/vue-json-tree@0.3.3/dist/json-tree.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -52,9 +52,13 @@
               Live Mode
               <md-tooltip>Parse while typing</md-tooltip>
             </md-switch>
-            <md-button class="md-raised" @click="parseInput()">
-              <md-icon style="color: #333">play_arrow</md-icon> Parse
+            <md-button v-if="!live" class="md-raised" @click="parseInput()">
+              <md-icon>play_arrow</md-icon> Parse
               <md-tooltip>Parse code</md-tooltip>
+            </md-button>
+            <md-button class="md-raised" href="/docs/">
+              <md-icon>book</md-icon> Help
+              <md-tooltip>Read API documentation</md-tooltip>
             </md-button>
           </div>
         </div>
